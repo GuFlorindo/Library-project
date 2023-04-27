@@ -8,7 +8,11 @@ namespace Biblioteca.Models
     public class Usuario
     {
        public int Id {get;set;}
+       public static int admin = 0;
+        public static int user = 1;
        public string Login {get;set;}
        public string Senha {get;set;}
+       public string Nome {get;set;}
+
     }
 }   
