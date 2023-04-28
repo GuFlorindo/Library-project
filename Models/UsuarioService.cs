@@ -22,6 +22,8 @@ namespace Biblioteca.Models
                 Usuario usuario = bc.Usuarios.Find(u.Id);
                 usuario.Login = u.Login;
                 usuario.Senha = u.Senha;
+                usuario.Nome = u.Nome;
+                usuario.Tipo = u.Tipo; 
                 bc.SaveChanges();
             }
         }
