@@ -31,6 +31,7 @@ namespace Biblioteca.Controllers
         }        
         public IActionResult Listagem(string tipoFiltro, string filtro)
         {
+            Autenticacao.CheckLogin(this);
             UsuarioService usuarioService = new UsuarioService();
             return View(usuarioService.ListarTodos());
         }
